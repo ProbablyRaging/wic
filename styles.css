@@ -54,6 +54,11 @@ input {
     font-size: 16px;
 }
 
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 button {
     background-color: #4978c1;
     border: none;
@@ -133,6 +138,10 @@ button {
     padding-left: 25px;
     padding-right: 25px;
     color: #6fe96f;
+}
+
+.footer {
+    padding-bottom: 18px;
 }
 
 .hidden {
