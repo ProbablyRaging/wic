@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Income Calculator</title>
+    <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="content">
+        <h1>Weekly Income Calculator</h1>
+
+        <div class="wrapper">
+            <div class="form">
+                <p class="header">Pay Rates</p>
+                <div>
+                    <div>
+                        <p class="label">Ordinary</p>
+                        <input id="ordinary" type="text" placeholder="$0.00">
+                    </div>
+
+                    <div>
+                        <p class="label">Loading</p>
+                        <input id="loading" type="text" placeholder="$0.00">
+                    </div>
+
+                    <div>
+                        <p class="label">Shift 25%</p>
+                        <input id="shift25" type="text" placeholder="$0.00">
+                    </div>
+
+                    <div>
+                        <p class="label">Shift 50%</p>
+                        <input id="shift50" type="text" placeholder="$0.00">
+                    </div>
+                </div>
+
+                <button id="save">Save</button>
+            </div>
+
+            <div class="form">
+                <p class="header">Hours Worked</p>
+                <div>
+                    <div>
+                        <p class="label">Monday-Saturday</p>
+                        <input id="monsat" type="text" placeholder="0">
+                    </div>
+
+                    <div>
+                        <p class="label">Sunday</p>
+                        <input id="sun" type="text" placeholder="0">
+                    </div>
+                </div>
+            </div>
+
+            <div class="result">
+                <p class="header">Pre-Tax Income</p>
+                <p id="result">$0.00</p>
+            </div>
+
+            <a href="https://www.ato.gov.au/uploadedFiles/Content/MEI/downloads/Weekly-tax-table-from-13-October-2020.pdf" target="_blank" style="font-size: 10px;">Tax Withheld Calculator</a>
+        </div>
+    </div>
+
+    <div id="status" class="status hidden">
+        <p>✅ Saved</p>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
